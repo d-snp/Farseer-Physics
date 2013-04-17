@@ -63,6 +63,27 @@ namespace FarseerPhysics.Collision.Shapes
                 Vertices = new Vertices(vertices);
         }
 
+
+        public bool HasPrevVertex
+        {
+            get { return _hasPrevVertex; }
+        }
+
+        public bool HasNextVertex
+        {
+            get { return _hasNextVertex; }
+        }
+
+        public Vector2 PrevVertex
+        {
+            get { return _prevVertex; }
+        }
+
+        public Vector2 NextVertex
+        {
+            get { return _nextVertex; }
+        }
+
         /// Create a loop. This automatically adjusts connectivity.
         public void CreateLoop(Vertices vertices)
         {
